@@ -126,182 +126,11 @@ for i in range(1, 4):
         print(f"{i} x {j} = {resultado}")
 
 
-# ============================================================
-# 7. EXEMPLO PRÁTICO: ANÁLISE DE TEXTO
-# ============================================================
-print("\n=== Análise de Texto ===")
 
-def analisar_texto(texto):
-    """Analisa características de um texto"""
-    
-    print(f"Analisando: '{texto}'")
-    
-    # Contadores
-    vogais = 0
-    consoantes = 0
-    espacos = 0
-    numeros = 0
-    especiais = 0
-    
-    # Percorrer cada caractere
-    for char in texto:
-        if char.lower() in 'aeiou':
-            vogais += 1
-        elif char.isalpha():
-            consoantes += 1
-        elif char.isspace():
-            espacos += 1
-        elif char.isdigit():
-            numeros += 1
-        else:
-            especiais += 1
-    
-    # Resultados
-    print(f"Vogais: {vogais}")
-    print(f"Consoantes: {consoantes}")
-    print(f"Espaços: {espacos}")
-    print(f"Números: {numeros}")
-    print(f"Caracteres especiais: {especiais}")
-    print(f"Total: {len(texto)} caracteres")
-
-# Testando
-analisar_texto("Python é incrível! 123")
 
 
 # ============================================================
-# 8. EXEMPLO PRÁTICO: GERADOR DE PADRÕES
-# ============================================================
-print("\n=== Gerador de Padrões ===")
-
-def gerar_triangulo(altura):
-    """Gera um triângulo de asteriscos"""
-    
-    print(f"Triângulo com altura {altura}:")
-    
-    for i in range(1, altura + 1):
-        # Espaços para centralizar
-        espacos = " " * (altura - i)
-        # Asteriscos
-        asteriscos = "*" * (2 * i - 1)
-        print(espacos + asteriscos)
-
-def gerar_quadrado(tamanho):
-    """Gera um quadrado de asteriscos"""
-    
-    print(f"\nQuadrado {tamanho}x{tamanho}:")
-    
-    for i in range(tamanho):
-        if i == 0 or i == tamanho - 1:
-            # Primeira e última linha - cheias
-            print("*" * tamanho)
-        else:
-            # Linhas do meio - apenas bordas
-            print("*" + " " * (tamanho - 2) + "*")
-
-# Testando
-gerar_triangulo(5)
-gerar_quadrado(6)
-
-
-# ============================================================
-# 9. EXEMPLO PRÁTICO: PROCESSADOR DE DADOS
-# ============================================================
-print("\n=== Processador de Dados ===")
-
-def processar_vendas():
-    """Processa dados de vendas"""
-    
-    vendas = [
-        {"produto": "Notebook", "preco": 2500, "quantidade": 3},
-        {"produto": "Mouse", "preco": 50, "quantidade": 10},
-        {"produto": "Teclado", "preco": 100, "quantidade": 5},
-        {"produto": "Monitor", "preco": 800, "quantidade": 2},
-    ]
-    
-    print("RELATÓRIO DE VENDAS")
-    print("=" * 50)
-    
-    total_geral = 0
-    
-    for venda in vendas:
-        produto = venda["produto"]
-        preco = venda["preco"]
-        quantidade = venda["quantidade"]
-        subtotal = preco * quantidade
-        total_geral += subtotal
-        
-        print(f"{produto:<12} | R$ {preco:>6.2f} | {quantidade:>3} un | R$ {subtotal:>8.2f}")
-    
-    print("=" * 50)
-    print(f"{'TOTAL GERAL':<12} | {'':<10} | {'':<6} | R$ {total_geral:>8.2f}")
-
-processar_vendas()
-
-
-# ============================================================
-# 10. EXEMPLO PRÁTICO: VALIDADOR DE SENHA
-# ============================================================
-print("\n=== Validador de Senha ===")
-
-def validar_senha_completa(senha):
-    """Valida uma senha com múltiplos critérios"""
-    
-    print(f"Validando senha: {'*' * len(senha)}")
-    
-    # Critérios
-    criterios = {
-        "tamanho": len(senha) >= 8,
-        "maiuscula": False,
-        "minuscula": False,
-        "numero": False,
-        "especial": False
-    }
-    
-    especiais = "!@#$%^&*()_+-=[]{}|;:,.<>?"
-    
-    # Verificar cada caractere
-    for char in senha:
-        if char.isupper():
-            criterios["maiuscula"] = True
-        elif char.islower():
-            criterios["minuscula"] = True
-        elif char.isdigit():
-            criterios["numero"] = True
-        elif char in especiais:
-            criterios["especial"] = True
-    
-    # Mostrar resultados
-    print("Critérios:")
-    for criterio, atendido in criterios.items():
-        status = "✅" if atendido else "❌"
-        print(f"{status} {criterio.replace('_', ' ').title()}")
-    
-    # Força da senha
-    pontos = sum(criterios.values())
-    
-    if pontos == 5:
-        forca = "Muito forte"
-    elif pontos >= 4:
-        forca = "Forte"
-    elif pontos >= 3:
-        forca = "Média"
-    else:
-        forca = "Fraca"
-    
-    print(f"\nForça da senha: {forca} ({pontos}/5)")
-    
-    return pontos >= 4
-
-# Testando
-senhas_teste = ["123456", "MinhaSenh@123", "password", "S3nh@F0rt3!"]
-
-for senha in senhas_teste:
-    print(f"\nTeste: {senha}")
-    validar_senha_completa(senha)
-
-
-# ============================================================
-# 11. COMPREENSÃO DE LISTAS (LIST COMPREHENSION)
+# 7. COMPREENSÃO DE LISTAS (LIST COMPREHENSION)
 # ============================================================
 print("\n=== List Comprehension ===")
 
@@ -322,7 +151,7 @@ print("Números pares:", pares)
 
 
 # ============================================================
-# 12. DICAS IMPORTANTES
+# 8. DICAS IMPORTANTES
 # ============================================================
 print("\n=== Dicas Importantes ===")
 

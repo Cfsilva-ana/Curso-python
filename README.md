@@ -23,8 +23,8 @@ Repositório completo para aprender Python do zero! Contém aulas progressivas, 
 | **06** | Conversão de Tipos | `06_CONVERSA_DE_TIPOS.py` | int(), float(), str() |
 | **07** | Valores Booleanos | `07_VALORES_VERDADEIROS_E_FALSOS.py` | True/False, truthy/falsy |
 | **08** | Tratamento de Erros | `08_TRATAMENTO_DE_ERROS .py` | Exceções básicas |
-| **09** | Operadores Aritméticos | `09_ PERADORES_ARITMETICOS.py` | +, -, *, /, //, %, ** + exemplos |
-| **10** | Concatenação | `10_ CONCATENACAO_E_REPETIÇÃO.py` | Juntar/repetir strings + ASCII art |
+| **09** | Operadores Aritméticos | `09_OPERADORES_ARITMETICOS.py` | +, -, *, /, //, %, ** + exemplos |
+| **10** | Concatenação | `10_CONCATENACAO_E_REPETIÇÃO.py` | Juntar/repetir strings + ASCII art |
 | **11** | Precedência | `11_PRECEDENCIA_DOS_OPERADORES.py` | Ordem de operações |
 | **12** | F-strings | `12_F-STRINGS.py` | Formatação moderna |
 | **13** | Método format() | `13_METODO_FORMAT.py` | Formatação clássica |
@@ -38,21 +38,28 @@ Repositório completo para aprender Python do zero! Contém aulas progressivas, 
 | **21** | Loops While | `21_WHILE_LOOPS.py` | Repetições com condição |
 | **22** | Loops For | `22_FOR_LOOPS.py` | Iterações em sequências |
 
-#### 📁 Arquivos Complementares:
-- `16_OPERADORES_LOGICOS.py` - Foco em operadores lógicos
-- `18_COMENTARIOS_E_DOCSTRINGS.py` - Documentação de código
-- `19_PARAMETROS_PRINT.py` - Parâmetros avançados do print()
-- `20_STRINGS_E_ASPAS.py` - Trabalho avançado com strings
-- `21_TIPOS_NUMERICOS.py` - Int e float detalhados
-- `22_TIPO_BOOL.py` - Booleanos e lógica completa
-
 #### 💼 Exemplos Práticos (Pasta `Exemplos/`):
 - **03_VARIÁVEIS/** - Sistema de radar
 - **04_TIPOS_DE_DADOS/** - Cadastro completo
 - **09_OPERADORES_ARITMETICOS/** - Calculadora, conversor, jogos
 - **10_CONCATENACAO_E_REPETIÇÃO/** - Recibos, ASCII art, tabelas
 - **14_INPUT/** - Calculadora interativa, cadastro
+- **15_CONDICIONAIS/** - Classificador de idade
+- **16_OPERADORES/** - Validador de dados, calculadora avançada
+- **17_TRY_EXCEPT/** - Validador de entrada com tratamento de erros
+- **19_FORMATACAO_AVANCADA/** - Gerador de relatórios formatados
+- **20_FATIAMENTO_STRINGS/** - Analisador de texto e URLs
 - **21_WHILE_LOOPS/** - Jogo de adivinhação, sistema de login
+- **22_FOR_LOOPS/** - Análise de texto, gerador de padrões, processador de vendas, validador de senha
+
+#### 📋 Conteúdos Integrados:
+- **Operadores Lógicos** - Integrado no arquivo 16_OPERADORES.py
+- **Operadores in/not in** - Integrado no arquivo 16_OPERADORES.py
+- **Comentários e DocStrings** - Integrado no arquivo 18_COMENTARIOS_E_DOCSTRINGS.py
+- **Parâmetros do print()** - Integrado no arquivo 02_FUNCAO print().py
+- **Strings e Aspas** - Integrado no arquivo 04_TIPOS_DE_DADOS.py
+- **Tipos Numéricos** - Integrado no arquivo 21_TIPOS_NUMERICOS.py
+- **Tipo Bool** - Integrado no arquivo 04_TIPOS_DE_DADOS.py
 
 ## 🚀 Como Usar Este Curso
 
@@ -74,6 +81,7 @@ code Curso-python
 6. Operadores avançados (Aula 16)
 7. Tratamento de erros (Aula 17)
 8. Conceitos avançados (Aulas 18-22)
+9. **Pratique com os exemplos** após cada aula
 
 ### 3. **Execute os Códigos**
 ```bash
@@ -92,26 +100,42 @@ python "14_INPUT.py"
 # Navegue até a pasta de exemplos
 cd Aulas/Exemplos
 
-# Execute exemplos específicos
-python "09_ PERADORES_ARITMETICOS/CALCULADORA.py"
-python "10_ CONCATENACAO_E_REPETIÇÃO/GERADOR_DE_RECIBOS.py"
+# Execute exemplos por aula
+python "09_OPERADORES_ARITMETICOS/CALCULADORA.py"
+python "15_CONDICIONAIS/CLASSIFICADOR_IDADE.py"
+python "16_OPERADORES/VALIDADOR_DADOS.py"
+python "17_TRY_EXCEPT/VALIDADOR_ENTRADA.py"
+python "19_FORMATACAO_AVANCADA/GERADOR_RELATORIO.py"
+python "20_FATIAMENTO_STRINGS/ANALISADOR_TEXTO.py"
 python "21_WHILE_LOOPS/JOGO_ADIVINHACAO.py"
+python "22_FOR_LOOPS/VALIDADOR_SENHA.py"
 ```
 
 ## 💡 Metodologia de Ensino
 
+### 🎯 **Separação Teoria x Prática:**
+- **Aulas (01-22)** - Conceitos fundamentais e sintaxe essencial
+- **Exemplos** - Projetos práticos e aplicações do mundo real
+- **Progresso gradual** - Da teoria básica à implementação avançada
+
 ### ✅ **Características das Aulas:**
 - **Progressivas** - Cada aula constrói sobre a anterior
-- **Práticas** - Exemplos do mundo real
-- **Interativas** - Use input() para experimentar
+- **Conceituais** - Foco nos fundamentos essenciais
+- **Diretas** - Sintaxe e conceitos sem complicação
 - **Comentadas** - Código bem explicado
 - **Testáveis** - Execute e veja os resultados
 
 ### 🎯 **Estrutura de Cada Aula:**
-1. **Conceitos teóricos** - O que você vai aprender
-2. **Exemplos práticos** - Como usar na prática
-3. **Casos reais** - Aplicações do dia a dia
-4. **Exercícios** - Para fixar o aprendizado
+1. **Conceitos teóricos** - Fundamentos essenciais
+2. **Sintaxe básica** - Como usar na prática
+3. **Exemplos simples** - Demonstrações diretas
+4. **Dicas importantes** - Boas práticas
+
+### 💼 **Estrutura dos Exemplos:**
+1. **Projetos práticos** - Aplicações do mundo real
+2. **Código completo** - Soluções funcionais
+3. **Casos de uso** - Problemas reais resolvidos
+4. **Exercícios avançados** - Para fixar o aprendizado
 
 ## 🛠️ Pré-requisitos
 
@@ -156,13 +180,14 @@ Marque ✅ conforme for completando:
 - [ ] Aula 21 - Loops While
 - [ ] Aula 22 - Loops For
 
-### Arquivos Complementares
-- [ ] Operadores Lógicos Detalhados
-- [ ] Comentários e DocStrings
-- [ ] Parâmetros Avançados do print()
-- [ ] Strings e Aspas Detalhadas
-- [ ] Tipos Numéricos Completos
-- [ ] Tipo Bool Completo
+### Conteúdos Integrados ✅
+- [x] Operadores Lógicos (arquivo 16)
+- [x] Operadores in/not in (arquivo 16)
+- [x] Comentários e DocStrings (arquivo 18)
+- [x] Parâmetros do print() (arquivo 02)
+- [x] Strings e Aspas (arquivo 04)
+- [x] Tipos Numéricos (arquivo 21)
+- [x] Tipo Bool (arquivo 04)
 
 ## 🎓 Próximos Passos
 

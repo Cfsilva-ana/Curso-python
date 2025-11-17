@@ -41,11 +41,11 @@ print("✅ Programa continua normalmente")
 print("\n=== Erros Específicos ===")
 
 try:
-    numero = int(input("Digite um número: "))
+    numero = int("10")
     resultado = 10 / numero
     print(f"10 ÷ {numero} = {resultado}")
 except ValueError:
-    print("❌ Erro: Digite apenas números!")
+    print("❌ Erro: Conversão inválida!")
 except ZeroDivisionError:
     print("❌ Erro: Não é possível dividir por zero!")
 
@@ -61,7 +61,7 @@ print("\n=== Múltiplas Exceções ===")
 
 try:
     lista = [1, 2, 3]
-    indice = int(input("Digite um índice (0-2): "))
+    indice = 1
     print(f"Elemento: {lista[indice]}")
 except ValueError:
     print(" Digite um número válido!")
@@ -79,7 +79,7 @@ except Exception as e:
 print("\n=== Mensagem do Erro ===")
 
 try:
-    idade = int(input("Digite sua idade: "))
+    idade = 25
     if idade < 0:
         raise ValueError("Idade não pode ser negativa")
     print(f"Você tem {idade} anos")
@@ -98,7 +98,7 @@ except Exception as erro:
 print("\n=== Else e Finally ===")
 
 try:
-    numero = float(input("Digite um número: "))
+    numero = 16.0
     raiz = numero ** 0.5
 except ValueError:
     print(" Número inválido!")

@@ -240,60 +240,7 @@ situacao = "aprovado" if nota >= 7 else "reprovado"
 print(f"Nota {nota}: {situacao}")
 
 
-# ============================================================
-# 10. EXEMPLO PRÁTICO: VALIDADOR DE DADOS
-# ============================================================
-print("\n=== Validador de Dados ===")
 
-def validar_usuario(nome, idade, email):
-    # Usando vários operadores
-    nome_valido = nome and len(nome) >= 2
-    idade_valida = isinstance(idade, int) and 0 <= idade <= 120
-    email_valido = "@" in email and "." in email
-    
-    print(f"Nome '{nome}' válido: {nome_valido}")
-    print(f"Idade {idade} válida: {idade_valida}")
-    print(f"Email '{email}' válido: {email_valido}")
-    
-    return nome_valido and idade_valida and email_valido
-
-# Testando
-resultado = validar_usuario("Ana", 25, "ana@email.com")
-print(f"Usuário válido: {resultado}")
-
-resultado = validar_usuario("", 150, "email_inválido")
-print(f"Usuário válido: {resultado}")
-
-
-# ============================================================
-# 11. EXEMPLO PRÁTICO: CALCULADORA AVANÇADA
-# ============================================================
-print("\n=== Calculadora Avançada ===")
-
-def calculadora(a, operador, b):
-    if operador == "+":
-        return a + b
-    elif operador == "-":
-        return a - b
-    elif operador == "*":
-        return a * b
-    elif operador == "/":
-        return a / b if b != 0 else "Erro: Divisão por zero"
-    elif operador == "//":
-        return a // b if b != 0 else "Erro: Divisão por zero"
-    elif operador == "%":
-        return a % b if b != 0 else "Erro: Divisão por zero"
-    elif operador == "**":
-        return a ** b
-    else:
-        return "Operador inválido"
-
-# Testando
-print(f"10 + 5 = {calculadora(10, '+', 5)}")
-print(f"10 / 3 = {calculadora(10, '/', 3)}")
-print(f"10 // 3 = {calculadora(10, '//', 3)}")
-print(f"10 % 3 = {calculadora(10, '%', 3)}")
-print(f"2 ** 8 = {calculadora(2, '**', 8)}")
 
 
 print("\n🎉 Você dominou todos os operadores!")
