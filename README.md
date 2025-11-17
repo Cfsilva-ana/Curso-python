@@ -1,6 +1,6 @@
-# 🐍 Meu Curso Python - Fundamentos
+# 🐍 Curso Python - Fundamentos
 
-Meu repositório pessoal de estudos Python! Organizei tudo para aprender do zero com aulas progressivas e exemplos práticos.
+Estou estudando Python do zero! Este repositório tem aulas progressivas e exemplos práticos organizados para facilitar meu aprendizado.
 
 ## 📚 Conteúdo do Curso
 
@@ -64,10 +64,10 @@ Meu repositório pessoal de estudos Python! Organizei tudo para aprender do zero
 ## 🚀 Como Estou Estudando
 
 ### 1. **Minha Rotina de Estudos**
-1. 📚 Leio a teoria na aula
-2. ▶️ Executo o código para ver funcionando
+1. 📚 Estudo a teoria na aula
+2. ▶️ Executo o código para entender
 3. 💻 Pratico com os exemplos
-4. ✅ Marco como concluído no checklist
+4. ✅ Marco como aprendido no checklist
 
 ### 2. **Executando as Aulas**
 ```bash
@@ -125,7 +125,7 @@ python "22_FOR_LOOPS/VALIDADOR_SENHA.py"
 
 ## 📋 Meu Progresso
 
-Vou marcando ✅ conforme vou aprendendo:
+Vou marcando ✅ conforme aprendo cada aula:
 
 ### Configuração
 - [ ] Python instalado
@@ -171,10 +171,10 @@ Vou marcando ✅ conforme vou aprendendo:
 
 ## 🎓 Próximos Passos
 
-Depois que terminar tudo isso, vou estudar:
+Depois que completar este curso, vou estudar:
 - 🔄 **Listas e Dicionários** (estruturas de dados)
-- ⚙️ **Funções** (organizar meu código)
-- 📦 **Módulos e Bibliotecas** (usar código de outros)
+- ⚙️ **Funções** (organizar código)
+- 📦 **Módulos e Bibliotecas** (usar bibliotecas)
 - 🏢 **Programação Orientada a Objetos** (nível avançado)
 
 ## 🤝 Como Contribuir
